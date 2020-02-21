@@ -25,7 +25,7 @@ ds=25; % rate of down-sampling
 
 % --- parameters for persistent homology
 rmin=0.1; % smallest scale considered
-rmax=0.5; % largeest scale considered
+rmax=0.5; % largest scale considered
 stepsize=0.005; % resolution of scales
 Lpnorm = -1; % norm for compare persistent landscapes (-1=infty)
 

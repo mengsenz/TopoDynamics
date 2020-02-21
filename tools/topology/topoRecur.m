@@ -28,7 +28,7 @@ p.addParameter('r_max',0.5); % maximal radius for Rips complex
 p.addParameter('initialstep',0.005);% initial radius of each data point
 p.addParameter('stepsize',0.005); % step size of filtration
 p.addParameter('scaling',[1 1 1]) % scaling of the coordinates
-p.addParameter('downsample',1,@isnumeric); % reduce temporal resolution by <downsample> for compute homology
+p.addParameter('downsample',1,@isnumeric); % reduce temporal resolution by <downsample> prior to computing homology
 % -- parameter for computing distance matrix
 p.addParameter('topodist',-1); % L-p norm of landscape distance
 p.addParameter('recurdist',@(x,y) norm([wrapToPi(x(1:length(x)/2)-y(1:length(x)/2)) ,x(length(x)/2+1:end)-y(length(x)/2+1:end)])); % distance function for recurrent quantification
